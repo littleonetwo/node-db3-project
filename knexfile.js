@@ -8,6 +8,7 @@ module.exports = {
     connection: {
       filename: './data/schemes.db3',
     },
+    useNullAsDefault: true,
     migrations: {
       directory: './data/migrations'
     },
@@ -21,5 +22,5 @@ module.exports = {
         conn.run('PRAGMA foreign_keys = ON', done); // turn on FK enforcement
       },
     },
-  }, 
+  },
 };
